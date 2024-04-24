@@ -4,18 +4,23 @@
     <type fullname="ChatterKidz.Components.ActivityHeader.ActivityHeaderViewModel" preserve="all" />
     <type fullname="ChatterKidz.Components.GuideCharacter.Events.ClickedGuideDialogEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Components.GuideCharacter.Events.ClickedPromptDialogEventChannel" preserve="all" />
-    <type fullname="ChatterKidz.Components.GuideCharacter.Events.GuideCharacterReadyEventChannel" preserve="all" />
-    <type fullname="ChatterKidz.Components.GuideCharacter.Events.GuideDialogEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Components.GuideCharacter.Events.HideGuideCharacterDialogEventChannel" preserve="all" />
+    <type fullname="ChatterKidz.Components.GuideCharacter.Events.SetGuideCharacterEventChannel" preserve="all" />
+    <type fullname="ChatterKidz.Components.GuideCharacter.Events.ShowGuideCharacterDialogEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Components.GuideCharacter.GuideCharacterModel" preserve="all" />
     <type fullname="ChatterKidz.Components.GuideCharacter.GuideCharacterViewModel" preserve="all" />
-    <type fullname="ChatterKidz.Components.GuideCharacter.ShowGuideCharacterDialogEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Components.MainMenu.MainMenuModel" preserve="all" />
     <type fullname="ChatterKidz.Components.MainMenu.MainMenuViewModel" preserve="all" />
     <type fullname="ChatterKidz.Components.MainMenu.ModuleItemController" preserve="all" />
+    <type fullname="ChatterKidz.Components.ModuleIntro.ModuleIntroModel" preserve="all" />
+    <type fullname="ChatterKidz.Components.ModuleIntro.ModuleIntroViewModel" preserve="all" />
+    <type fullname="ChatterKidz.Components.ModuleOutro.ModuleOutroModel" preserve="all" />
+    <type fullname="ChatterKidz.Components.ModuleOutro.ModuleOutroViewModel" preserve="all" />
     <type fullname="ChatterKidz.Components.Progression.GetModuleCompletionRequest" preserve="all" />
     <type fullname="ChatterKidz.Components.Progression.Profile" preserve="all" />
     <type fullname="ChatterKidz.Components.Progression.ProgressionManager" preserve="all" />
+    <type fullname="ChatterKidz.Components.Welcome.WelcomeModel" preserve="all" />
+    <type fullname="ChatterKidz.Components.Welcome.WelcomeViewModel" preserve="all" />
   </assembly>
   <assembly fullname="ChatterKidz.Activities.PhonemeIdentification, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="ChatterKidz.Activities.PhonemeIdentification.Scripts.ActivityDataset" preserve="all" />
@@ -32,6 +37,7 @@
     <type fullname="ChatterKidz.Activities.SyllableCounting.Scripts.ActivityDataset" preserve="all" />
     <type fullname="ChatterKidz.Activities.SyllableCounting.Scripts.ChoiceItemController" preserve="all" />
     <type fullname="ChatterKidz.Activities.SyllableCounting.Scripts.Events.SetupLevelEventChannel" preserve="all" />
+    <type fullname="ChatterKidz.Activities.SyllableCounting.Scripts.Events.ShowChoicesEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Activities.SyllableCounting.Scripts.GameplayManager" preserve="all" />
     <type fullname="ChatterKidz.Activities.SyllableCounting.Scripts.Number" preserve="all" />
     <type fullname="ChatterKidz.Activities.SyllableCounting.Scripts.SyllableCountingActivity" preserve="all" />
@@ -56,24 +62,33 @@
     <type fullname="ChatterKidz.Infrastructure.Events.LoadEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Events.LoadModuleEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Events.SaveSettingsEventChannel" preserve="all" />
+    <type fullname="ChatterKidz.Infrastructure.Events.SceneReadyEventChannel" preserve="all" />
+    <type fullname="ChatterKidz.Infrastructure.Events.SetActivityHeaderElementsVisibilityEventChannel" preserve="all" />
+    <type fullname="ChatterKidz.Infrastructure.Events.SetIntroEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Events.UI.UIClickEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Events.UI.UIEventsChannel" preserve="all" />
+    <type fullname="ChatterKidz.Infrastructure.Events.UnloadEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Events.VolumeEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Events.WrongAnswerSelected" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Gameplay.Module" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Input.InputReader" preserve="all" />
+    <type fullname="ChatterKidz.Infrastructure.Input.InputSystemUiManager" preserve="all" />
+    <type fullname="ChatterKidz.Infrastructure.Requests.SetInputsStateRequest" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.SceneManagement.GameScene" preserve="all" />
-    <type fullname="ChatterKidz.Infrastructure.SceneManagement.LoadSceneOnInput" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.SceneManagement.OtherSceneLoader" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.SceneManagement.SceneLoader" preserve="all" />
+    <type fullname="ChatterKidz.Infrastructure.SceneManagement.SceneReadyBroadcaster" preserve="all" />
+    <type fullname="ChatterKidz.Infrastructure.SceneManagement.SceneReadyListener" preserve="all" />
+    <type fullname="ChatterKidz.Infrastructure.Setting.DesignSettings" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Setting.SettingManager" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Setting.Settings" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.UI.FadeController" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Audio.AudioData.AudioClipsGroup" preserve="nothing" serialized="true" />
     <type fullname="ChatterKidz.Infrastructure.SceneManagement.AssetReferenceScene" preserve="nothing" serialized="true" />
+    <type fullname="ChatterKidz.Infrastructure.UI.Controls.RadialProgressBar/UxmlFactory" preserve="nothing" serialized="true" />
+    <type fullname="ChatterKidz.Infrastructure.UI.Controls.RadialProgressBar/UxmlSerializedData" preserve="nothing" serialized="true" />
     <type fullname="ChatterKidz.Infrastructure.UI.EventsHandlerBinding/UxmlSerializedData" preserve="nothing" serialized="true" />
     <type fullname="ChatterKidz.Infrastructure.UI.ItemGrid/UxmlFactory" preserve="nothing" serialized="true" />
-    <type fullname="ChatterKidz.Infrastructure.UI.ClickHandlerBinding/UxmlSerializedData" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
@@ -187,7 +202,6 @@
     <type fullname="UnityEngine.RenderSettings" preserve="all" />
     <type fullname="UnityEngine.Shader" preserve="all" />
     <type fullname="UnityEngine.Sprite" preserve="all" />
-    <type fullname="UnityEngine.SpriteRenderer" preserve="all" />
     <type fullname="UnityEngine.Texture2D" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
     <type fullname="UnityEngine.Bounds" preserve="nothing" serialized="true" />
@@ -220,8 +234,6 @@
     <type fullname="UnityEngine.UIElements.StyleValueHandle" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UIElements.DataBinding/UxmlSerializedData" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UIElements.Length" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.UIElements.ProgressBar/UxmlFactory" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.UIElements.ProgressBar/UxmlSerializedData" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UIElements.TemplateAsset" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UIElements.TemplateContainer/UxmlSerializedData" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UIElements.UxmlNamespaceDefinition" preserve="nothing" serialized="true" />
@@ -233,10 +245,12 @@
     <type fullname="UnityEngine.UIElements.VisualTreeAsset/AssetEntry" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UIElements.VisualTreeAsset/UsingEntry" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UIElements.VisualTreeAsset/UxmlObjectEntry" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.UIElements.Label/UxmlFactory" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.UIElements.Label/UxmlSerializedData" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UIElements.Button/UxmlFactory" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UIElements.Button/UxmlSerializedData" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UIElements.Label/UxmlFactory" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UIElements.Label/UxmlSerializedData" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UIElements.ProgressBar/UxmlFactory" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UIElements.ProgressBar/UxmlSerializedData" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Canvas" preserve="all" />
