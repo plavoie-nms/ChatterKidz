@@ -8,6 +8,7 @@
     <type fullname="ChatterKidz.Components.GuideCharacter.Events.SetGuideCharacterEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Components.GuideCharacter.Events.ShowGuideCharacterDialogEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Components.GuideCharacter.GuideCharacterModel" preserve="all" />
+    <type fullname="ChatterKidz.Components.GuideCharacter.GuideCharacterPose" preserve="all" />
     <type fullname="ChatterKidz.Components.GuideCharacter.GuideCharacterViewModel" preserve="all" />
     <type fullname="ChatterKidz.Components.MainMenu.MainMenuModel" preserve="all" />
     <type fullname="ChatterKidz.Components.MainMenu.MainMenuViewModel" preserve="all" />
@@ -19,6 +20,8 @@
     <type fullname="ChatterKidz.Components.Progression.GetModuleCompletionRequest" preserve="all" />
     <type fullname="ChatterKidz.Components.Progression.Profile" preserve="all" />
     <type fullname="ChatterKidz.Components.Progression.ProgressionManager" preserve="all" />
+    <type fullname="ChatterKidz.Components.Video.VideoModel" preserve="all" />
+    <type fullname="ChatterKidz.Components.Video.VideoViewModel" preserve="all" />
     <type fullname="ChatterKidz.Components.Welcome.WelcomeModel" preserve="all" />
     <type fullname="ChatterKidz.Components.Welcome.WelcomeViewModel" preserve="all" />
   </assembly>
@@ -66,6 +69,7 @@
     <type fullname="ChatterKidz.Infrastructure.Events.SetActivityHeaderElementsVisibilityEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Events.SetIntroEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Events.ShowModuleIntroEventChannel" preserve="all" />
+    <type fullname="ChatterKidz.Infrastructure.Events.ShowVideoEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Events.UI.UIClickEventChannel" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Events.UI.UIEventsChannel" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Events.UnloadEventChannel" preserve="all" />
@@ -83,6 +87,7 @@
     <type fullname="ChatterKidz.Infrastructure.Setting.DesignSettings" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Setting.SettingManager" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Setting.Settings" preserve="all" />
+    <type fullname="ChatterKidz.Infrastructure.UI.AtlasAnimation" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.UI.FadeController" preserve="all" />
     <type fullname="ChatterKidz.Infrastructure.Audio.AudioData.AudioClipsGroup" preserve="nothing" serialized="true" />
     <type fullname="ChatterKidz.Infrastructure.SceneManagement.AssetReferenceScene" preserve="nothing" serialized="true" />
@@ -192,6 +197,7 @@
   </assembly>
   <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AtlasSpriteProvider" preserve="all" />
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider" preserve="all" />
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider" preserve="all" />
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.SceneProvider" preserve="all" />
@@ -212,14 +218,15 @@
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.LightmapSettings" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
-    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.RenderSettings" preserve="all" />
+    <type fullname="UnityEngine.RenderTexture" preserve="all" />
     <type fullname="UnityEngine.Shader" preserve="all" />
     <type fullname="UnityEngine.Sprite" preserve="all" />
     <type fullname="UnityEngine.Texture2D" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
+    <type fullname="UnityEngine.U2D.SpriteAtlas" preserve="all" />
     <type fullname="UnityEngine.Bounds" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.RenderPipelineGraphicsSettingsCollection" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
@@ -249,8 +256,8 @@
     <type fullname="UnityEngine.UIElements.StyleSheets.Dimension" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UIElements.StyleSheets.ScalableImage" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UIElements.StyleValueHandle" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.UIElements.DataBinding/UxmlSerializedData" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UIElements.Length" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UIElements.DataBinding/UxmlSerializedData" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UIElements.TemplateAsset" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UIElements.TemplateContainer/UxmlSerializedData" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UIElements.UxmlNamespaceDefinition" preserve="nothing" serialized="true" />
@@ -272,6 +279,10 @@
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Canvas" preserve="all" />
     <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.VideoModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Video.VideoClip" preserve="all" />
+    <type fullname="UnityEngine.Video.VideoPlayer" preserve="all" />
   </assembly>
   <assembly fullname="Unity.RenderPipelines.GPUDriven.Runtime">
     <type fullname="UnityEngine.Rendering.GPUResidentDrawerResources" preserve="nothing" serialized="true" />
